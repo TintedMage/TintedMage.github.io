@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Zen+Dots&display=swap');
 
 /* ----- Colours ----- */
-:root {
-	--blue: #6495ed;
-	--bgcolour: #ffffff;
-  }
+	:root {
+		--fgcolor: ;
+		--bgcolour: #ffffff;
+	}
   
 /**/
 
-/* ----- Default ----- */
+/* ----- Reset ----- */
 	* {
 		margin: 0;
 		padding: 0;
@@ -27,19 +27,30 @@
 	a {
 		text-decoration: none;
 	}
+
+/**/
+
+/* ----- Default ----- */
+	.flex-container_col {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.flex-container_row {
+		display: flex;
+		flex-direction: row;
+	}
 /**/
 
 /* ----- Header ----- */
 	.header{
-		border-bottom: 1px solid #E2E8F0;
-		background-image: url(/img/header.jpg);
-		background-position: center;
+		background-image: url(/img/header.png);
+		background-position: center center;
 		background-size: cover;
 	}
 
 	/* ----- Navbar ----- */
 		.navbar {
-			display: flex;
 			justify-content: space-between;
 			align-items: center;
 			padding: 1rem 1.5rem;
@@ -47,6 +58,7 @@
 			position: fixed;
 			width: 100%;
 			background-color: var(--bgcolour);
+			
 		}
 
 		.hamburger {
@@ -54,7 +66,7 @@
 			font-size: large;
 		}
 
-		.bar {
+		.bar { /* animation */
 			display: block;
 			width: 25px;
 			height: 3px;
@@ -90,7 +102,15 @@
 			color: #482ff7;
 		}
 
-		@media only screen and (max-width: 768px) {
+		@media only screen and (max-width: 650px) {
+			.margin {
+				margin: 0;
+			}
+			.center-text {
+				text-align: center;
+				padding: 0%;
+			}
+
 			.nav-menu {
 				position: fixed;
 				left: -100%;
@@ -136,6 +156,25 @@
 			}
 
 		}
+	/**/
+
+	/* ----- Title ----- */
+		#title {
+			text-align: center;
+			font-size: 8vw;
+			padding-top: 20%;
+			font-weight:bolder;
+			color: rgb(255, 255, 255);
+		}
+		#tagline {
+			margin: 0 auto;
+			text-align: center;
+			font-size: 1.2vw;
+			color: rgb(255, 255, 255);
+			width: 30%;
+			padding-bottom: 20%;
+		}
+
 	/**/
 
 /**/
