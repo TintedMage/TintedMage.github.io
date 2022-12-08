@@ -122,65 +122,65 @@
 	/**/
 
 	/* ----- Media queries ----- */
-	@media only screen and (max-width: 650px) {
-		.margin {
-			margin: 0;
-		}
-		.center-text {
-			text-align: center;
-			padding: 0%;
-		}
-
-		.nav-menu {
-			position: fixed;
-			left: -100%;
-			top: 4.2rem;
-			flex-direction: column;
-			background-color: #fff;
-			width: 100%;
-			text-align: center;
-			transition: 0.3s;
-		}
-
-		.nav-menu.active {
-			left: 0;
-		}
-
-		.nav-item {
-			margin: 2.5rem 0;
-		}
-
-		.hamburger {
-			display: block;
-			cursor: pointer;
-		}
-
-		#title {font-size: 8.5vw; padding-top: 200px;}
-		#tagline{font-size: 4vw;padding-bottom: 300px;}
-
-
-		@media only screen and (max-width: 300px) {
-			
-			.nav-logo a {
-				display: none;
+		@media only screen and (max-width: 650px) {
+			.margin {
+				margin: 0;
 			}
-		}
+			.center-text {
+				text-align: center;
+				padding: 0%;
+			}
 
-		/* menu animation */
-		.hamburger.active .bar:nth-child(2) {
-			opacity: 0;
-		}
+			.nav-menu {
+				position: fixed;
+				left: -100%;
+				top: 4.2rem;
+				flex-direction: column;
+				background-color: #fff;
+				width: 100%;
+				text-align: center;
+				transition: 0.3s;
+			}
 
-		.hamburger.active .bar:nth-child(1) {
-			transform: translateY(8px) rotate(45deg);
-		}
+			.nav-menu.active {
+				left: 0;
+			}
 
-		.hamburger.active .bar:nth-child(3) {
-			transform: translateY(-8px) rotate(-45deg);
-		}
+			.nav-item {
+				margin: 2.5rem 0;
+			}
 
-	}
-	
+			.hamburger {
+				display: block;
+				cursor: pointer;
+			}
+
+			#title {font-size: 8.5vw; padding-top: 200px;}
+			#tagline{font-size: 4vw;padding-bottom: 300px;}
+
+
+			@media only screen and (max-width: 300px) {
+				
+				.nav-logo a {
+					display: none;
+				}
+			}
+
+			/* menu animation */
+			.hamburger.active .bar:nth-child(2) {
+				opacity: 0;
+			}
+
+			.hamburger.active .bar:nth-child(1) {
+				transform: translateY(8px) rotate(45deg);
+			}
+
+			.hamburger.active .bar:nth-child(3) {
+				transform: translateY(-8px) rotate(-45deg);
+			}
+
+		}
+	/**/
 
 /**/
 
