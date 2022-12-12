@@ -23,18 +23,18 @@
 
 /* ----- Header ----- */
 	header {
-		background-image: url('/img/header.png');
+		background-image: url('/img/drawing.svg');
 		background-position: center center;
 		background-size: cover;
 	}
 
 	/* ----- navigation ----- */
-	nav { background-color:white;height:40px;position:fixed;width:100%;}
+	nav { background-color:white;height:40px;position:fixed;width:100%;box-shadow: 0 10px 27px rgba(0, 0, 0, 0.30);}
 	.navbar {justify-content:space-between;align-items:center;height:40px;}
 	.nav-logo {justify-content:flex-start;font-size: larger;}
 	.nav-menu {justify-content:flex-end;font-size: small;}
 	.hamburger {display: none;font-size:large;}
-
+	.nav-item {padding:10% 10% 10% 10%;} .nav-item:hover {background-color: rgba(0, 0, 0, 0.123);} .nav-link {color: #282828;}
 
 	/* ----- title -----*/
 	#title-box {align-items:center; padding: 15vmax 40px 21vmax 40px}
@@ -47,13 +47,10 @@
 
 		#title {font-size: 8.5vw;}
 		#tagline {font-size: 3vw;}
-		.nav-menu{display: none;}
-		.hamburger{display: block;}
-
-
-		@media only screen and (max-width: 300px) {
-
-		}
+		.hamburger {display: block;}
+		.nav-menu.active {left: 0;}
+		.nav-menu {position: fixed; left: -100%; top: 4.2rem; width: 100%;flex-direction: column;
+					background-color: #fff;transition: 0.3s;}
 	}
 /**/
 
