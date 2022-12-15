@@ -21,7 +21,7 @@
 	.center-text {text-align:center;}
 	.flex-row {display:flex;flex-direction:row;}
 	.flex-col {display:flex;flex-direction:column;}
-	.paragraph {font-size:2em;}
+	.paragraph {font-size:2em;text-align: center;}
 	.heading {font-size: 4em;font-weight: 1000;padding-top: 50px;font-family: 'Roboto Condensed',sans-serif;}
 	.pagepadding {padding-left: 50px; padding-right: 50px;}
 /**/
