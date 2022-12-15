@@ -14,7 +14,7 @@
 
 
 /* ----- Default ----- */
-	.margin {margin:auto;padding: 0 10px 0 10px;}
+	.margin {margin:auto;padding: 0 15px 0 15px;}
 	.m-pagewidth {max-width:1080px;}
 	.center-text {text-align:center;}
 	.flex-row {display:flex;flex-direction:row;}
@@ -25,28 +25,30 @@
 	header {
 		background-image: url('/img/drawing.svg');
 		background-position: center center;
-		background-size: cover;
+		background-size:cover;
+		background-repeat: no-repeat;
 	}
 
 	/* ----- navigation ----- */
-	nav { background-color:white;height:40px;position:fixed;width:100%;box-shadow: 0 10px 27px rgba(0, 0, 0, 0.30);}
-	.navbar {justify-content:space-between;align-items:center;height:40px;}
-	.nav-logo {justify-content:flex-start;font-size: larger;}
-	.nav-menu {justify-content:flex-end;font-size: small;}
+	nav { background-color:white;height:75px;position:fixed;width:100%;box-shadow: 0 10px 27px rgba(0, 0, 0, 0.30);}
+	.navbar {justify-content:space-between;align-items:center;height:75px;}
+	.nav-logo {justify-content:flex-start;font-size:x-large;padding-right: 15px;}
+	.nav-logo img {display:block; float: left;width: 50px;height: 35px;}
+	.nav-logo a {display: block;float: right;padding: 7px 0 0 0px;}
+	.nav-menu {justify-content:flex-end;font-size: large;}
 	.hamburger {display: none;font-size:large;}
 	.nav-item {padding:10% 10% 10% 10%;} .nav-item:hover {background-color: rgba(0, 0, 0, 0.123);} .nav-link {color: #282828;}
 
 	/* ----- title -----*/
-	#title-box {align-items:center; padding: 15vmax 40px 21vmax 40px}
-	#title {color:var(--fg); font-weight:bolder; font-size: 8em;}
-	#tagline {font-size: 2em;color:var(--fg);text-align: center;width: 80%;}
+	#title-box {align-self: center; align-items:right; padding: 220px 15px 350px 15px; width: 100%;}
+	#tagline {font-size: 2em;color:var(--fg);text-align: right;}
 /**/
 
 /* ----- Media queries ----- */
 	@media only screen and (max-width: 650px) {
 
-		#title {font-size: 8.5vw;}
-		#tagline {font-size: 3vw;}
+		header {height: 600px;}
+		#tagline {text-align: center;}
 		.hamburger {display: block;}
 		.nav-menu.active {left: 0;}
 		.nav-menu {position: fixed; left: -100%; top: 4.2rem; width: 100%;flex-direction: column;
