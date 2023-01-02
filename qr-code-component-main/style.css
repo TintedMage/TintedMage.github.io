@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.container {
+	background-color:hsl(212, 45%, 89%);
+	height: 730px;
+	width: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 15px;
+	text-justify: distribute;
+}
+
+.card {
+	background-color: white;
+	text-align: center;
+	justify-content: space-between;
+	border-radius: 15px;
+}
+
+ b {font-weight: 700;font-size: 20px;}
+
+.qr-code {
+	height: 300px;
+	margin: 15px;
+	border-radius: 7px;
+}
+
+.info {
+	max-width: 300px;
+	margin: auto;
+}
