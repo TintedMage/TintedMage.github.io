@@ -25,7 +25,7 @@ body {
 	border-radius: 15px;
 }
 
- b {font-weight: 700;font-size: 20px;}
+ b {font-weight: 700;font-size: 20px;color: black;}
 
 .qr-code {
 	height: 300px;
@@ -36,4 +36,6 @@ body {
 .info {
 	max-width: 300px;
 	margin: auto;
+	font-weight: 400;
+	color: hsl(212, 45%, 89%);
 }
